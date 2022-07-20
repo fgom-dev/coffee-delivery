@@ -56,7 +56,55 @@ export const CoffeCardContainer = styled.div`
     color: ${(props) => props.theme.baseLabel};
   }
 
-  form {
+  .cardPrice {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.4375rem;
+
+    p {
+      font-family: 'Baloo 2', sans-serif;
+      font-weight: 800;
+      font-size: 2rem;
+      color: ${(props) => props.theme.baseText};
+
+      span {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
+
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+
+      input[type='number'] {
+        width: 4.5rem;
+        height: 2.375rem;
+        border: 0;
+        border-radius: 6px;
+        background: ${(props) => props.theme.baseButton};
+
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        color: ${(props) => props.theme.baseTitle};
+        text-align: center;
+      }
+
+      button {
+        display: flex;
+        padding: 0.5rem;
+        background: ${(props) => props.theme.purpleDark};
+        border: 0;
+        border-radius: 6px;
+        color: ${(props) => props.theme.white};
+
+        cursor: pointer;
+      }
+    }
   }
 `

@@ -11,3 +11,9 @@ export const HomeContainer = styled.div`
     color: ${(props) => props.theme.baseSubtitle};
   }
 `
+
+export const CoffeeCardContainer = styled.div`
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+`

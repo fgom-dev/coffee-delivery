@@ -15,15 +15,17 @@ export function CoffeeCard() {
         <p className="description">
           O tradicional café feito com água quente e grãos moídos
         </p>
-        <form>
+        <div className="cardPrice">
           <p>
             <span>R$</span>9,90
           </p>
-          <input type="number" name="" id="" />
-          <button type="submit">
-            <ShoppingCart size={20} weight="fill" />
-          </button>
-        </form>
+          <form>
+            <input type="number" min={1} max={99} step={1} defaultValue={1} />
+            <button type="submit">
+              <ShoppingCart size={20} weight="fill" />
+            </button>
+          </form>
+        </div>
       </div>
     </CoffeCardContainer>
   )
