@@ -58,6 +58,5 @@ export const CoffeCardContainer = styled.div`
 
   form {
     display: flex;
-    flex-wrap: wrap;
   }
 `
