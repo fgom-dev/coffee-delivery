@@ -81,21 +81,7 @@ export const CoffeCardContainer = styled.div`
       justify-content: space-between;
       gap: 0.5rem;
 
-      input[type='number'] {
-        width: 4.5rem;
-        height: 2.375rem;
-        border: 0;
-        border-radius: 6px;
-        background: ${(props) => props.theme.baseButton};
-
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        font-size: 1rem;
-        color: ${(props) => props.theme.baseTitle};
-        text-align: center;
-      }
-
-      button {
+      button[type='submit'] {
         display: flex;
         padding: 0.5rem;
         background: ${(props) => props.theme.purpleDark};

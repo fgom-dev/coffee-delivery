@@ -23,7 +23,7 @@ export const HeaderContainer = styled.header`
       color: ${(props) => props.theme.purpleDark};
     }
 
-    button {
+    a {
       display: flex;
       border: 0;
       padding: 0.5rem;
